@@ -39,6 +39,39 @@
       text-decoration: none;
       color: rgb(67, 67, 67);
     }
+    /* Home page styles */
+    .homepage-title {
+      text-align: center;
+      font-size: 40px;
+      margin: 40px 0 0 0;
+    }
+    .homepage-subtitle {
+      text-align: center;
+      margin: 0;
+      color: rgb(182, 182, 182);
+    }
+    .homepage-gallery {
+      padding: 0 40px;
+    }
+    .homepage-gallery-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .homepage-gallery-item {
+      width: 100%;
+      aspect-ratio: 1/1;
+      background-color: rgb(182, 182, 182);
+    }
+
+    .homepage-gallery-item:hover {
+      transform: scale(1.02);
+    }
+
+    .homepage-gallery-title {
+      font-weight: 700;
+      font-size: 24px;
+    }
   </style>
   <body>
     <header>
@@ -52,15 +85,19 @@
     </header>
     <main>
       <div>
-        <h1>Welcome to our web site</h1>
-        <p>Here you will find the car you want, at the price you want</p>
+        <h1 class="homepage-title">Welcome to our web site</h1>
+        <p class="homepage-subtitle">
+          Here you will find the car you want, at the price you want
+        </p>
       </div>
-      <section>
-        <p>Most wanted</p>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <section class="homepage-gallery">
+        <p class="homepage-gallery-title">Most wanted</p>
+        <div class="homepage-gallery-wrapper">
+          <div class="homepage-gallery-item"></div>
+          <div class="homepage-gallery-item"></div>
+          <div class="homepage-gallery-item"></div>
+          <div class="homepage-gallery-item"></div>
+        </div>
       </section>
     </main>
   </body>
