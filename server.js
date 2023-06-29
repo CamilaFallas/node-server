@@ -1,10 +1,12 @@
 const http = require('http');
 const fs = require('fs');
+
 // Crear el servidor
 const server = http.createServer((req, res) => {
+
   // Obtener la ruta solicitada por el cliente
   const url = req.url;
-  console.log(url)
+
   // Manejar la ruta específica
   if (url === "/") {
     // Leer el archivo HTML correspondiente a la ruta específica
