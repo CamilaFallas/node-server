@@ -1,23 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" src="styles.css">
-  <title>HOME</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" src="styles.css" />
+    <title>HOME</title>
+  </head>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* nav styles */
+    .nav-wrapper {
+      align-items: center;
+      display: flex;
+      padding: 20px;
+      justify-content: space-between;
+      background-color: rgb(182, 182, 182);
+      margin-bottom: 20px;
+    }
+    .nav {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+    .nav-logo {
+      font-weight: 700;
+      font-size: 24px;
+      text-decoration: none;
+      color: rgb(67, 67, 67);
+    }
+    .nav__link a {
+      font-size: 24px;
+      text-decoration: none;
+      color: rgb(67, 67, 67);
+    }
+  </style>
+  <body>
+    <header>
+      <nav class="nav-wrapper">
+        <span class="nav-logo">Logo</span>
+        <ul class="nav">
+          <li class="nav__link"><a href="/about">About</a></li>
+          <li class="nav__link"><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h1>Welcome to our web site</h1>
+        <p>Here you will find the car you want, at the price you want</p>
+      </div>
+      <section>
+        <p>Most wanted</p>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+    </main>
+  </body>
 </html>

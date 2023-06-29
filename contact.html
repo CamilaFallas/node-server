@@ -7,32 +7,9 @@
   <style>
     body {
       background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
+      font-family: sans-serif;
       margin: 0;
       padding: 0;
-    }
-
-    header {
-      background-color: #6ab04c;
-      padding: 10px;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: space-around;
-    }
-
-    nav li {
-      display: inline;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 10px;
     }
 
     .container {
@@ -71,18 +48,41 @@
     input[type="submit"]:hover {
       background-color: #5a9845;
     }
+
+    /* nav styles */
+    .nav-wrapper {
+      display: flex;
+      padding: 20px;
+      justify-content: space-between;
+      background-color: rgb(182, 182, 182);
+      margin-bottom: 20px;
+      align-items: center;
+    }
+    .nav {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+    .nav-logo {
+      font-weight: 700;
+      font-size: 24px;
+      text-decoration: none;
+      color: rgb(67, 67, 67);
+    }
+    .nav__link a {
+      font-size: 24px;
+      text-decoration: none;
+      color: rgb(67, 67, 67);
+    }
   </style>
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/about.html">About</a>
-        </li>
+    <nav class="nav-wrapper">
+      <a class="nav-logo" href="/">Logo</a>
+      <ul class="nav">
+        <li class="nav__link"><a href="/">Home</a></li>
+        <li class="nav__link"><a href="/about">About</a></li>
       </ul>
     </nav>
   </header>
@@ -90,9 +90,9 @@
     <h1>Formulario de contacto</h1>
     <form action="" method="POST">
       <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+      <input autocomplete="name" type="text" id="nombre" name="nombre" required>
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <input autocomplete="email" type="email" id="email" name="email" required>
       <label for="mensaje">Mensaje:</label><br>
       <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
       <input type="submit" value="Enviar">

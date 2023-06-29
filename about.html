@@ -6,16 +6,47 @@
   <link rel="stylesheet" href="styles.css">
   <title>ABOUT</title>
 </head>
+<style>
+  body {
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* nav styles */
+  .nav-wrapper {
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: rgb(182, 182, 182);
+    margin-bottom: 20px;
+  }
+  .nav {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  .nav-logo {
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(67, 67, 67);
+  }
+  .nav__link a {
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(67, 67, 67);
+  }
+</style>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
-        </li>
+    <nav class="nav-wrapper">
+      <span class="nav-logo">Logo</span>
+      <ul class="nav">
+        <li class="nav__link"><a href="/">Home</a></li>
+        <li class="nav__link"><a href="/contact">Contact</a></li>
       </ul>
     </nav>
   </header>
